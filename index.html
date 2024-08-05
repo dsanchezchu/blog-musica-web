@@ -4,34 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
     <link rel="shortcut icon" href="/images/logo/logo-sin-fondo.ico" type="image/x-icon">
     <title>Rock Latam</title>
 </head>
 
 <body>
     <!-- Acá va la barra de navegación y logo -->
-    <header id="cabezaPrincipal">
-        <section id="barraSuperior">
-            <nav id="barraPrincipalNavegacion">
-                <ul>
-                    <li><a href="">Artistas</a></li>
-                    <li><a href="">Sobre Nosotros</a></li>
-                    <li><a href="">Contactanos</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section id="barraPrincipal">
-            <img src="/images/logo/logo.png" alt="logo-pagina">
-        </section>
-    </header>
+    <div id="header-rock" class="fixed-header">
+        <header id="cabezaPrincipal">
+            <div class="wrapper">
+                <section id="barraSuperior">
+                    <nav id="barraPrincipalNavegacion">
+                        <ul class="d-flex">
+                            <li class="link-header"><a href="">Artistas</a></li>
+                            <li class="link-header"><a href="">Sobre Nosotros</a></li>
+                            <li class="link-header"><a href="">Contactanos</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <section id="barraPrincipal">
+                    <img src="/images/logo/logo-sin-fondo.png" alt="logo-pagina" width="92" height="92">
+                </section>
+            </div>
+        </header>
+    </div>
     <!-- Mi contenido principal -->
     <main>
         <article id="perfilPagina">
             <section id="Descripcion">
                 <h1>Rock Latam</h1>
                 <img src="/images/bandas/fondo01.png" alt="artistasRockLatam">
-            <p>El rock argentino a traves de su instrumentos hacen el arte y transmiten el sentmiento a <br> 
-                traves de sus canciones, por eso en esta pagina encontrar todo relacionado al rock en latinoamerica</p>
+                <p>El rock argentino a traves de su instrumentos hacen el arte y transmiten el sentmiento a <br>
+                    traves de sus canciones, por eso en esta pagina encontrar todo relacionado al rock en latinoamerica
+                </p>
                 <img src="/images/bandas/gif-movimiento.webp" alt="rockero-moviendose" width="350" height="300">
             </section>
             <aside id="bandasPorPais">
@@ -39,18 +45,24 @@
                 <table>
                     <tr>
                         <td><img src="/images/banderas/bandera-peru.png" alt="bandera-peru" width="90" height="90""><br>Peru</td>
-                        <td><img src="/images/bandas/arena-hashjpg.jpg" alt="arena-hash" width="90" height="90"><br> Arena Hash</td>
+                        <td><img src=" /images/bandas/arena-hashjpg.jpg" alt="arena-hash" width="90" height="90"><br>
+                            Arena Hash</td>
                         <td><img src="/images/bandas/libido.jpg" alt="libido" width="90" height="90"><br>Libido</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/banderas/bandera-argentina.png" alt="bandera-argentina" width="90" height="90"><br>Argentina</td>
-                        <td><img src="/images/bandas/soda-stereo.jpg" alt="soda-stereo" width="90" height="90"><br>Soda Stereo</td>
-                        <td><img src="/images/bandas/autenticos-decadentes.jpg" alt="autenticos-decadentes" width="90" height="90"><br>Autenticos Decandentes</td>
+                        <td><img src="/images/banderas/bandera-argentina.png" alt="bandera-argentina" width="90"
+                                height="90"><br>Argentina</td>
+                        <td><img src="/images/bandas/soda-stereo.jpg" alt="soda-stereo" width="90" height="90"><br>Soda
+                            Stereo</td>
+                        <td><img src="/images/bandas/autenticos-decadentes.jpg" alt="autenticos-decadentes" width="90"
+                                height="90"><br>Autenticos Decandentes</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/banderas/bandera-chile.png" alt="bandera-chile" width="90" height="90"><br>Chile</td>
-                        <td><img src="/images/bandas/los prisioneros.jpg" alt="los-prisioneros" width="90" height="90"><br>Los Prisioneros</td>
-                        <td><img src="/images/bandas/los-bumkers.jpg" alt="arena-hash" width="90" height="90"><br>Los Bunkers</td>
+                        <td><img src="/images/banderas/bandera-chile.png " 90" height="90"><br>Chile</td>
+                        <td><img src="/images/bandas/los prisioneros.jpg" alt="los-prisioneros" width="90"
+                                height="90"><br>Los Prisioneros</td>
+                        <td><img src="/images/bandas/los-bumkers.jpg" alt="arena-hash" width="90" height="90"><br>Los
+                            Bunkers</td>
                     </tr>
                 </table>
             </aside>
@@ -59,7 +71,8 @@
             <h2>Galera de fotos de artistas</h2>
             <section id="cadaArtista">
                 <img src="/images/artistas/andres-calamaro.jpg" alt="andres-calamaro" width="90" height="90">
-                <img src="/images/artistas/bon-y-los-enemigos-del-silencio.jpg" alt="bon-y-los-enemigos-del-silencio" width="90" height="90">
+                <img src="/images/artistas/bon-y-los-enemigos-del-silencio.jpg" alt="bon-y-los-enemigos-del-silencio"
+                    width="90" height="90">
                 <img src="/images/artistas/caifanes.jpg" alt="caifanes" width="90" height="90">
                 <img src="/images/artistas/charly-garcia.jpg" alt="charly-garcia" width="90" height="90"><br>
                 <img src="/images/artistas/enanitos-verdes.jpg" alt="enanitos-verdes" width="90" height="90">
@@ -79,20 +92,21 @@
             <section id="formulario">
                 <form action="" method="post">
                     <fieldset>
-                    <legend>Contactanos</legend>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" placeholder="Su nombre y apellido" required><br>
-                    <label for="correo">Correo Electronico</label>
-                    <input type="email" id="correo" placeholder="ejemplo@tucorreo.com" required><br>
-                    <textarea name="mensaje" id="mensaje" cols="20" rows="4" placeholder="cuentanos tu idea..." required></textarea><br>
-                    <input type="submit" value="Enviar">
+                        <legend>Contactanos</legend>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" placeholder="Su nombre y apellido" required><br>
+                        <label for="correo">Correo Electronico</label>
+                        <input type="email" id="correo" placeholder="ejemplo@tucorreo.com" required><br>
+                        <textarea name="mensaje" id="mensaje" cols="20" rows="4" placeholder="cuentanos tu idea..."
+                            required></textarea><br>
+                        <input type="submit" value="Enviar">
                     </fieldset>
                 </form>
             </section>
         </section>
         <section id="cierre">
             <section id="copyright">
-                Rock Latam <br>Trujillo-Peru<br> 2024 Todos los derechos reservados.<br> 
+                Rock Latam <br>Trujillo-Peru<br> 2024 Todos los derechos reservados.<br>
             </section>
             <section id="redesSociales">
                 <ul>
@@ -104,4 +118,5 @@
         </section>
     </footer>
 </body>
+
 </html>

@@ -1,0 +1,69 @@
+html{
+    box-sizing: border-box;
+    font-size: 70.5%;
+}
+
+body{
+    margin: 0px;
+}
+
+#header-rock.fixed-header{
+    background-color: aliceblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: height 0.3s;
+}
+#header-rock{
+   margin-top: 0px;   
+}
+
+.wrapper{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    height: 100%;
+}
+
+#barraPrincipal{
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#barraSuperior{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+#cabezaPrincipal{
+  height: 90px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.link-header{
+    margin: 0px 8px;
+}
+ul li.link-header a{
+    padding-bottom: 8px;
+    color: #4e04ef;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 18px;
+}
+*:after{
+    box-sizing: inherit;
+}
