@@ -1,4 +1,6 @@
 # blog-musica-web
 Blog de música
-<a href="https://rocklatam.netlify.app/" target="_blank">https://rocklatam.netlify.app/</a>
+
+[https://rocklatam.netlify.app/](https://rocklatam.netlify.app/) (se abrirá en una nueva pestaña)
+
 
