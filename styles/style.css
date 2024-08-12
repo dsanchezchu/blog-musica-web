@@ -1,64 +1,39 @@
 html {
     box-sizing: border-box;
-    font-size: 70.5%;
+    font-size: 62.5%;
+}
+/* HEADER */
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+#page-rock #header-rock.fixed-header{
+    background-color: #b42f14;
 }
 
 body {
     margin: 0px;
+    scrollbar-color: #5c88aa #ffffff;
 }
 
-/* HEADER */
 #header-rock.fixed-header {
-    background-color: #5c88aa;
     position: fixed;
-    /*Para que el header nos siga cuando hagamos scroll*/
     top: 0;
     left: 0;
     width: 100%;
-    height: 95px;
     z-index: 1000;
-    transition: height 0.3s;
-}
-
-#header-rock {
-    margin-top: 0px;
-}
-
-.wrapper {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-    height: 100%;
-}
-
-#barraPrincipal {
-    float: left;
-    height: 90px;
-    width: 90px;
-    display: flex;
-    align-items: center;
-}
-
-#barraSuperior {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    float: right;
-}
-
-#cabezaPrincipal {
-    height: 90px;
+    transition: height .3s;
 }
 
 
 
-.link-header {
-    margin: 0px 8px;
-}
-
-ul li.link-header a {
-    padding-bottom: 8px;
-    color: #ffffff;
+#site-logo img{
+    text-decoration: none;
+    color: inherit;
+    width: 70px;
+    height: 70px;
 }
 
 ul li {
@@ -70,14 +45,53 @@ ul li a {
     font-size: 18px;
 }
 
-*:after {
-    box-sizing: inherit;
+.wrapper {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    height: 100%;
+}
+
+#site-logo {
+    float: left;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+}
+
+#nav-links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.link-header{
+    margin: 0px 8px;
+}
+
+ul li.link-header a {
+    padding-bottom: 8px;
+    color: #ffffff;
+}
+
+#header-rock {
+    margin-top: 0px;
+}
+
+#cabezaPrincipal{
+    height: 88px;
 }
 
 /* FOOTER */
 .footer-basico {
     padding: 20px 0px;
-    background-color: #5c88aa;
+    background-color: #2596be;
     color: #ffffff;
 }
 
@@ -115,30 +129,69 @@ p {
 
 /* MAIN */
 /* PORTADA */
-main {
-    background-image: url(../images//banner/banner-01.jpg);
-    height: 100%;
+.conten-page{
+    margin-top: 88px;/*Para que no se superponga el header*/
+}
+.portada{
+    background-image: url(../images/banner/banner-01.jpg);
+    height: 88.2vh;
     background-size: cover;
     background-repeat: repeat;
-    background-position: center;
-    padding: 0%;
+    background-position: center center;
+    padding: 0px 60px;
     display: table;
     width: 100%;
     background-position: left;
-    margin-top: 95px;
 }
 
-.text-section1{
+#bandasPorPais{
+    background-image: url(../images/banner/banner-02.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    padding: 0 60px;
+    display: table;
+    width: 100%;
+    background-position: left;
+}
+
+#galeria{
+    background-image: url(../images/banner/banner-03.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    padding: 0px 60px;
+    display: table;
+    width: 100%;
+    background-position: left;
+}
+.header-texto{
     text-align: center;
-    color: #ffffff;
+    color: #180202;
     height: 100%;
     align-items: center;
+    display: table-cell;
     vertical-align: middle;
 }
+
+img.image-portada{ /*Tamaño de imagen de portada*/
+    height: 80%;
+}
+
 
 /* Utilidades: para usarlo como nombre en clases y se reutilicen */
 .no-margin{
     margin: 0px;
+}
+
+h2.light{
+    color: #ffffff;
+}
+
+h2.dark{
+    color: #1a1818;
 }
 
 h2{
@@ -149,19 +202,88 @@ h2{
     text-align: start;
 }
 
+.text-right{
+    text-align:right;
+}
+
+.text-center{
+    text-align:center;
+}
 .d-flex {
     display: flex;
 }
 
 .border-title{
-    border-bottom: 10px solid #5697db;
-    width: 40%;
+    border-bottom: 10px solid #1d169c;
+    width: 78%;
 }
 
 .description-title{
+    color: #f9f9f9;
     font-size: 18px;
 }
 
 .title{
     font-size: 80px;
+}
+
+.contenedor-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+/* TABLA */
+.text-table{
+    font-size: medium;
+    text-align: center;
+}
+table tr td img.bandera-size{
+    width: 150px;
+    height: 100px;
+}
+
+table tr{
+    background-color:#fff5;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 5px #000000;
+}
+table tr td img{
+    width: 100px;
+    height: 100px;
+}
+
+
+table{
+    
+    height: 90%;
+    width: 90%;   
+    border-collapse: collapse
+}
+
+table tr td{
+    padding: 10px 30px 0 30px;
+}
+/* GALERIA */
+#cadaArtista{
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+#cadaArtista img{
+    width: 300px;
+    height: 280px;
+    object-fit: cover;
+    object-position: bottom;
+    padding: 3.5px;
+}
+
+#cadaArtista img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.5s;
 }
