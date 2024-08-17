@@ -185,71 +185,6 @@ img.image-portada{ /*Tamaño de imagen de portada*/
     padding: 26px;
 } 
 
-
-
-/* Utilidades: para usarlo como nombre en clases y se reutilicen */
-.ml-1{
-    margin-left: 8px;
-}
-
-.mr-2{
-    margin-right: 8px;
-}
-
-.mt-5{
-    margin-top: 3px;
-}
-.no-margin{
-    margin: 0px;
-}
-
-h2.light{
-    color: #ffffff;
-}
-
-h2.dark{
-    color: #1a1818;
-}
-
-h2{
-    font-size: 4rem;
-}
-
-.text-start{
-    text-align: start;
-}
-
-.text-right{
-    text-align:right;
-}
-
-.text-center{
-    text-align:center;
-}
-.d-flex {
-    display: flex;
-}
-
-.border-title{
-    border-bottom: 10px solid #1d169c;
-    width: 78%;
-}
-
-.description-title{
-    color: #f9f9f9;
-    font-size: 15px;
-}
-
-.title{
-    font-size: 80px;
-}
-
-.contenedor-imagen{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:100%;
-}
 /* TABLA */
 .text-table{
     font-size: medium;
@@ -282,7 +217,6 @@ table tr td{
 }
 
 /* GALERIA */
-
 .content-text-offerts{
     background-image: url(../images/banner/banner-04.jpg);
     background-size: cover;
@@ -393,6 +327,70 @@ table tr td{
     max-width: 180px;
     height: auto;
     padding-top: 20px;
+}
+
+/* Utilidades: para usarlo como nombre en clases y se reutilicen */
+.ml-1{
+    margin-left: 8px;
+}
+
+.mr-2{
+    margin-right: 8px;
+}
+
+.mt-5{
+    margin-top: 3px;
+}
+.no-margin{
+    margin: 0px;
+}
+
+h2.light{
+    color: #ffffff;
+}
+
+h2.dark{
+    color: #1a1818;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+.text-start{
+    text-align: start;
+}
+
+.text-right{
+    text-align:right;
+}
+
+.text-center{
+    text-align:center;
+}
+.d-flex {
+    display: flex;
+}
+
+.border-title{
+    border-bottom: 10px solid #1d169c;
+    width: 78%;
+}
+
+.description-title{
+    color: #f9f9f9;
+    font-size: 15px;
+}
+
+.title{
+    font-size: 80px;
+}
+
+.contenedor-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
 }
 
 /* ESTILOS */
