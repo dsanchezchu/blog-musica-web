@@ -11,13 +11,16 @@
     <!-- font style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>Rock Latam</title>
 </head>
 
 <body>
     <!-- Acá va la barra de navegación y logo -->
     <div id="page-rock">
+        <!-- Header -->
         <div id="header-rock" class="fixed-header">
             <header id="cabezaPrincipal">
                 <div class="wrapper">
@@ -39,8 +42,8 @@
         <!-- Mi contenido principal -->
         <main>
             <div class="conten-page">
-                <article>
-                    <section class="portada">
+                <section>
+                    <div class="portada">
                         <div class="header-texto">
                             <h2 class="no-margin light title text-start">Rock Latam</h2>
                             <div class="no-margin border-title"></div>
@@ -53,43 +56,165 @@
                             </p>
                         </div>
                         <aside class="contenedor-imagen">
-                            <img class="no-margin image-portada" src="/images/bandas/fondo01.png" alt="artistasRockLatam">
+                            <img class="no-margin image-portada" src="/images/bandas/fondo01.png"
+                                alt="artistasRockLatam">
                         </aside>
-                    </section>
-                </article>
-                <article id="bandasPorPais">   
+                    </div>
+                </section>
+                <section id="bandasPorPais">
                     <table class="table-bandas kanit-regular">
                         <tr>
-                            <td class="bandera"><img class="bandera-size" src="/images/banderas/bandera-peru.png" alt="bandera-peru" height="90"">
-                                <p class="no-margin text-table ">Peru</p></td>
+                            <td class="bandera"><img class="bandera-size" src="/images/banderas/bandera-peru.png"
+                                    alt="bandera-peru" height="90"">
+                                <p class=" no-margin text-table ">Peru</p></td>
                             <td><img src=" /images/bandas/arena-hashjpg.jpg" alt="arena-hash" width="90" height="90">
-                                <p class="no-margin text-table">Arena Hash</p></td>
+                                <p class="no-margin text-table">Arena Hash</p>
+                            </td>
                             <td><img src="/images/bandas/libido.jpg" alt="libido" width="90" height="90">
-                                <p class="no-margin text-table">Libido</p></td>
+                                <p class="no-margin text-table">Libido</p>
+                            </td>
                         </tr>
                         <tr>
-                            <td class="bandera"><img class="bandera-size" src="/images/banderas/bandera-argentina.png" alt="bandera-argentina">
-                                <p class="no-margin text-table dark">Argentina</p></td>
+                            <td class="bandera"><img class="bandera-size" src="/images/banderas/bandera-argentina.png"
+                                    alt="bandera-argentina">
+                                <p class="no-margin text-table dark">Argentina</p>
+                            </td>
                             <td><img src="/images/bandas/soda-stereo.jpg" alt="soda-stereo">
-                                <p class="no-margin text-table">Soda Stereo</p></td>
+                                <p class="no-margin text-table">Soda Stereo</p>
+                            </td>
                             <td><img src="/images/bandas/autenticos-decadentes.jpg" alt="autenticos-decadentes">
-                                <p class="no-margin text-table">Autenticos Decadentes</p></td>
+                                <p class="no-margin text-table">Autenticos Decadentes</p>
+                            </td>
                         </tr>
                         <tr>
-                            <td class="bandera"><img class="bandera-size" src="/images/banderas/bandera-chile.png " height="90">
-                                <p class="no-margin text-table ">Chile</p></td>
+                            <td class="bandera"><img class="bandera-size" src="/images/banderas/bandera-chile.png "
+                                    height="90">
+                                <p class="no-margin text-table ">Chile</p>
+                            </td>
                             <td><img src="/images/bandas/los prisioneros.jpg" alt="los-prisioneros">
-                                <p class="no-margin text-table">Los Prisioneros</p></td>
+                                <p class="no-margin text-table">Los Prisioneros</p>
+                            </td>
                             <td><img src="/images/bandas/los-bumkers.jpg" alt="arena-hash">
-                                <p class="no-margin text-table">Los Bunkers</p></td>
+                                <p class="no-margin text-table">Los Bunkers</p>
+                            </td>
                         </tr>
                     </table>
                     <div class="header-texto">
                         <h2 class="no-margin  light sub-title text-right">Bandas de rock por país</h2>
                     </div>
-                    
-                </article>
-                <article id="galeria">
+
+                </section>
+                <section id="ofertasDia" class="content-text-offerts">
+                    <h2 class="text-center kanit-regular">Ofertas del dia</h2>
+                    <div class="seccion-ofertas">
+                        <!-- Componente 01 -->
+                        <div class="oferta-indiv">
+                            <div>
+                                <img class="img-producto" src="/images/mercancia/polo-01.png" alt="polo-cerati">
+                            </div>
+                            <div class="txt-base">
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">-10%</span>
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">Polo de estreno</span>
+                            </div>
+                            <div style="margin-top: 8px;">
+                                <span class="ml-1 kanit-regular titleproduct">Polo de soda stereo</span>
+                            </div>
+                            <div class="ml-1">
+                                <div class="txt-base-carousel-section-price ml-2 kanit-regular">S/4.50
+                                    <label class="txt-base-carousel-section-price txt-base-carousel-section-price-dscto">S/6.50</label>
+                                </div>
+                            </div>
+                            <div class="float-right mr-2 mt-5">
+                                <input type="submit" value="Agregar" class="botton-small kanit-regular">
+                            </div>
+                        </div>
+                        <!-- Componente 02 -->
+                        <div class="oferta-indiv">
+                            <div>
+                                <img class="img-producto" src="/images/mercancia/polo-02.png" alt="polo-rock">
+                            </div>
+                            <div class="txt-base">
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">-10%</span>
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">Polo de estreno</span>
+                            </div>
+                            <div style="margin-top: 8px;">
+                                <span class="ml-1 kanit-regular titleproduct">Polo de soda stereo</span>
+                            </div>
+                            <div class="ml-1">
+                                <div class="txt-base-carousel-section-price ml-2 kanit-regular">S/4.50
+                                    <label class="txt-base-carousel-section-price txt-base-carousel-section-price-dscto">S/6.50</label>
+                                </div>
+                            </div>
+                            <div class="float-right mr-2 mt-5">
+                                <input type="submit" value="Agregar" class="botton-small kanit-regular">
+                            </div>
+                        </div>
+                        <!-- Componente 03 -->
+                        <div class="oferta-indiv">
+                            <div>
+                                <img class="img-producto" src="/images/mercancia/polo-03.png" alt="polo-ramnstein">
+                            </div>
+                            <div class="txt-base">
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">-10%</span>
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">Polo de estreno</span>
+                            </div>
+                            <div style="margin-top: 8px;">
+                                <span class="ml-1 kanit-regular titleproduct">Polo de soda stereo</span>
+                            </div>
+                            <div class="ml-1">
+                                <div class="txt-base-carousel-section-price ml-2 kanit-regular">S/4.50
+                                    <label class="txt-base-carousel-section-price txt-base-carousel-section-price-dscto">S/6.50</label>
+                                </div>
+                            </div>
+                            <div class="float-right mr-2 mt-5">
+                                <input type="submit" value="Agregar" class="botton-small kanit-regular">
+                            </div>
+                        </div>
+                        <!-- Componente 04 -->
+                        <div class="oferta-indiv">
+                            <div>
+                                <img class="img-producto" src="/images/mercancia/polo-04.png" alt="polo-radiohead">
+                            </div>
+                            <div class="txt-base">
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">-10%</span>
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">Polo de estreno</span>
+                            </div>
+                            <div style="margin-top: 8px;">
+                                <span class="ml-1 kanit-regular titleproduct">Polo de soda stereo</span>
+                            </div>
+                            <div class="ml-1">
+                                <div class="txt-base-carousel-section-price ml-2 kanit-regular">S/4.50
+                                    <label class="txt-base-carousel-section-price txt-base-carousel-section-price-dscto">S/6.50</label>
+                                </div>
+                            </div>
+                            <div class="float-right mr-2 mt-5">
+                                <input type="submit" value="Agregar" class="botton-small kanit-regular">
+                            </div>
+                        </div>
+                        <!-- Componente 04 -->
+                        <div class="oferta-indiv">
+                            <div>
+                                <img class="img-producto" src="/images/mercancia/polo-05.png" alt="polo-artick-monkeys">
+                            </div>
+                            <div class="txt-base">
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">-10%</span>
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">Polo de estreno</span>
+                            </div>
+                            <div style="margin-top: 8px;">
+                                <span class="ml-1 kanit-regular titleproduct">Polo de soda stereo</span>
+                            </div>
+                            <div class="ml-1">
+                                <div class="txt-base-carousel-section-price ml-2 kanit-regular">S/4.50
+                                    <label class="txt-base-carousel-section-price txt-base-carousel-section-price-dscto">S/6.50</label>
+                                </div>
+                            </div>
+                            <div class="float-right mr-2 mt-5">
+                                <input type="submit" value="Agregar" class="botton-small kanit-regular">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="galeria">
                     <div class="text-galery">
                         <h2 class=" text-center sub-title no-margin kanit-regular">Galeria de fotos de artistas</h2>
                     </div>
@@ -99,8 +224,8 @@
                         <a href="/images/artistas/bon-y-los-enemigos-del-silencio.jpg" target="_blank"><img
                                 src="/images/artistas/bon-y-los-enemigos-del-silencio.jpg"
                                 alt="bon-y-los-enemigos-del-silencio"></a>
-                        <a href="/images/artistas/caifanes.jpg" target="_blank"><img
-                                src="/images/artistas/caifanes.jpg" alt="caifanes"></a>
+                        <a href="/images/artistas/caifanes.jpg" target="_blank"><img src="/images/artistas/caifanes.jpg"
+                                alt="caifanes"></a>
                         <a href="/images/artistas/charly-garcia.jpg" target="_blank"><img
                                 src="/images/artistas/charly-garcia.jpg" alt="charly-garcia"></a>
                         <a href="/images/artistas/enanitos-verdes.jpg" target="_blank"><img
@@ -112,7 +237,7 @@
                         <a href="/images/artistas/jorge-gonzales.jpg" target="_blank"><img
                                 src="/images/artistas/jorge-gonzales.jpg" alt="jorge-gonzales"></a>
                     </section>
-                </article>
+                </section>
             </div>
         </main>
         <!-- Infomacion de cierre -->
@@ -150,4 +275,5 @@
         </footer>
     </div>
 </body>
+
 </html>

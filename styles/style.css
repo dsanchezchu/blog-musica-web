@@ -15,7 +15,7 @@ html {
 
 body {
     margin: 0px;
-    scrollbar-color: #5c88aa #ffffff;
+    scrollbar-width: none;
 }
 
 #header-rock.fixed-header {
@@ -188,6 +188,17 @@ img.image-portada{ /*Tamaño de imagen de portada*/
 
 
 /* Utilidades: para usarlo como nombre en clases y se reutilicen */
+.ml-1{
+    margin-left: 8px;
+}
+
+.mr-2{
+    margin-right: 8px;
+}
+
+.mt-5{
+    margin-top: 3px;
+}
 .no-margin{
     margin: 0px;
 }
@@ -223,7 +234,6 @@ h2{
     border-bottom: 10px solid #1d169c;
     width: 78%;
 }
-
 
 .description-title{
     color: #f9f9f9;
@@ -261,7 +271,6 @@ table tr td img{
     height: 100px;
 }
 
-
 table{
     height: 100%;
     width: 80%;   
@@ -271,15 +280,25 @@ table{
 table tr td{
     padding: 10px 30px 0 30px;
 }
+
 /* GALERIA */
+
+.content-text-offerts{
+    background-image: url(../images/banner/banner-04.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    display: table;
+    width: 100%;
+    background-position: center;
+}
 #cadaArtista{
     display: flex;
     max-width: 1400px;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-   
 }
+
 #cadaArtista img{
     width: 300px;
     height: 280px;
@@ -292,6 +311,88 @@ table tr td{
     cursor: pointer;
     opacity: 0.7;
     transition: 0.5s;
+}
+
+/* MERCANCIA */
+.bg-gray{
+    background-color: #f3f3f3;
+}
+
+.seccion-ofertas{
+    height: 350px;
+    padding: 15px 80px;
+    display: flex;
+    place-content: space-around;
+}
+.txt-base{
+    text-align: center;
+}
+
+.txt-base-carousel-section-discount{
+    font-size: 12px;
+    color: white;
+    background-color: #6270cd;
+    border-radius: 8px;
+    padding: 0px 10px;   
+}
+
+.titleproduct{
+    font-size: 17px;
+}
+
+.txt-base-carousel-section-price{
+    font-size: 14px;
+    text-align: left;
+    color: black;
+}
+
+.txt-base-carousel-section-price label{
+    font-size: 12px!important;
+}
+
+.txt-base-carousel-section-price-dscto{
+    color: #c47d7d;
+    text-decoration: line-through;
+}
+
+.float-right{
+    display: flex;
+    float: right;
+}
+
+
+.botton-small{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    background-color: #e69898;
+}
+
+.botton-small:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.5s;
+    background-color: #b42f14;
+}
+
+
+.oferta-indiv{
+    height: 310px;
+    background-color: #f3f3f3c7;
+    max-width: 150%;
+    border-radius: 6px;
+    
+}
+.img-producto{
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    padding-top: 20px;
 }
 
 /* ESTILOS */
@@ -318,6 +419,7 @@ table tr td{
     font-weight: 400;
     font-style: normal;
   }
+
   
   .kanit-medium {
     font-family: "Kanit", sans-serif;
