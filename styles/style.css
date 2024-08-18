@@ -208,7 +208,6 @@ table tr td img{
 
 table{
     height: 100%;
-    width: 80%;   
     border-collapse: collapse
 }
 
@@ -294,7 +293,6 @@ table tr td{
     float: right;
 }
 
-
 .botton-small{
     display: inline-block;
     color: rgb(255, 255, 255);
@@ -329,7 +327,108 @@ table tr td{
     padding-top: 20px;
 }
 
+/* CATEGORIAS */
+.categorias-bg{
+    background: url(/images/banner/banner-05.jpg);
+}
+.img-categoria{
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container-categorias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,200px);
+    gap: 60px 70px;
+    justify-content: space-between;
+}
+
+.categoria-individual{
+    width: 200px;
+    border-radius: 16px;    
+}
+
+.categoria-title{
+    font-size: 15px;
+    margin-top: 4px;
+    text-align: center;
+    width: 190px;
+    cursor: pointer;
+}
+
+/* CONTACTO */
+.contacto-bg{
+    background-image: url(../images/banner/banner-06.jpg);
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario{
+    background-color: #f3f3f39b;
+    margin: 10px auto 0 auto;
+    padding: 40px;
+    width: 76%;
+}
+
+.boton{
+    display: inline-block;
+    color: rgb(225, 7, 7);
+    background-color: #f3f3f3;
+    border-radius: 5%;
+    text-align: center;
+    padding: 10px 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 20px;
+    border: none;
+}
+
+.boton:hover{
+    cursor: pointer;
+    color: #f3f3f3;
+    background-color: #b42f14;
+    opacity: 0.7;
+    transition: 0.6s;
+}
+
+.campo_field{
+    flex: 1;
+    border: 1px solid #b42f14;
+    padding:  6px 8px;
+}
+.campo{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.campo_field_textarea{
+    height: 100px;
+}
+.campo_label{
+    white-space: nowrap; /* El texto se escriba en una linea */
+    flex: 0 0 140px;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* Utilidades: para usarlo como nombre en clases y se reutilicen */
+.padding-r{
+    padding-top: 20px;
+}
+.container{
+    width: min(100%, 120rem);
+    margin: 0 auto;
+}
 .ml-1{
     margin-left: 8px;
 }
@@ -345,7 +444,14 @@ table tr td{
     margin: 0px;
 }
 
-h2.light{
+.no-margin-t{
+    margin-top: 0;
+}
+.no-padding{
+    padding: none;
+}
+
+.light{
     color: #ffffff;
 }
 
@@ -393,7 +499,7 @@ h2{
     height:100%;
 }
 
-/* ESTILOS */
+/* FUENTES */
 .kanit-thin {
     font-family: "Kanit", sans-serif;
     font-weight: 100;
