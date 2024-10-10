@@ -217,16 +217,14 @@ table tr td {
 /* GALERIA */
 .content-text-offerts {
     background-image: url(../images/banner/banner-04.jpg);
-    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center center; /* Centra la imagen */
+    height: 80vh;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
     padding: 0 60px;
+    display: table;
     width: 100%;
-    min-height: 80vh; /* Ajusta la altura mínima para evitar que la imagen se descuadre */
-    display: flex; /* Utiliza flexbox para la alineación */
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box; /* Asegura que padding y borde no afecten el ancho */
+    background-position: left;
 }
 
 #cadaArtista {
@@ -257,13 +255,12 @@ table tr td {
 }
 
 .seccion-ofertas {
-    height: auto; /* La altura se ajustará automáticamente */
+    height: auto; /* Para que la altura se ajuste automáticamente */
     padding: 15px 80px;
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
-    justify-content: space-around; /* Espaciado uniforme alrededor de las tarjetas */
-    overflow: hidden; /* Evita el desbordamiento */
-    box-sizing: border-box; /* Asegura que padding y borde no afecten el ancho */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden; /* Para evitar desbordamiento de contenido */
 }
 
 .txt-base {
@@ -322,14 +319,14 @@ table tr td {
 }
 
 .oferta-indiv {
+    height: auto;
     background-color: #f3f3f3c7;
     width: 100%;
-    max-width: 200px; /* Mantiene la forma de las tarjetas */
+    max-width: 200px; /* Mantiene la forma de tarjeta rectangular */
     border-radius: 6px;
-    margin: 15px; /* Añade espacio entre las tarjetas */
+    margin: 15px; /* Añadido margen para evitar que se junten las tarjetas */
     padding: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Añade una sombra */
-    height: auto; /* Altura automática para ajustar el contenido */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Añadido sombra para definición */
 }
 
 .img-producto {
@@ -587,32 +584,6 @@ h2 {
     font-style: normal;
 }
 
-/* Media Queries para ajustar la responsividad */
-@media screen and (max-width: 1024px) {
-    .content-text-offerts {
-        padding: 0 40px; /* Ajuste de padding en pantallas medianas */
-        min-height: 60vh; /* Ajusta la altura mínima en pantallas medianas */
-        background-position: center center; /* Asegura que la imagen se mantenga centrada */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .content-text-offerts {
-        padding: 0 20px; /* Ajusta el padding en pantallas pequeñas */
-        min-height: 50vh; /* Menor altura en pantallas más pequeñas */
-        background-position: center center; /* Mantiene la imagen centrada */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .content-text-offerts {
-        padding: 0 10px; /* Ajusta el padding para móviles */
-        min-height: 40vh; /* Ajusta la altura mínima en pantallas más pequeñas */
-        background-position: center center; /* Asegura que la imagen esté centrada */
-    }
-}
-
-
 /* Responsive */
 @media screen and (max-width: 1024px) {
     .seccion-ofertas {
@@ -635,34 +606,5 @@ h2 {
     .oferta-indiv {
         width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
         max-width: 200px; /* Mantiene la forma de la tarjeta */
-    }
-}
-
-/* Media Queries para ajustar las tarjetas en pantallas más pequeñas */
-@media screen and (max-width: 1024px) {
-    .seccion-ofertas {
-        padding: 15px 40px; /* Reduce el padding en pantallas medianas */
-    }
-    .oferta-indiv {
-        flex: 1 1 45%; /* Ajusta el tamaño de las tarjetas en pantallas medianas */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .seccion-ofertas {
-        flex-direction: column; /* Coloca las tarjetas una debajo de otra en pantallas pequeñas */
-        padding: 15px 20px;
-    }
-    .oferta-indiv {
-        max-width: 100%; /* Las tarjetas ocupan todo el ancho en pantallas pequeñas */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .seccion-ofertas {
-        padding: 15px 10px; /* Aún menos padding en móviles */
-    }
-    .oferta-indiv {
-        max-width: 100%; /* Las tarjetas ocupan todo el ancho en móviles */
     }
 }
