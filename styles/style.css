@@ -2,20 +2,19 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
+
 /* HEADER */
 *,
 *:before,
-*:after{
+*:after {
     box-sizing: inherit;
 }
 
-#page-rock #header-rock.fixed-header{
-    background-color: #b42f14;
-}
-
 body {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     scrollbar-width: none;
+    overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
 #header-rock.fixed-header {
@@ -25,15 +24,24 @@ body {
     width: 100%;
     z-index: 1000;
     transition: height .3s;
+    background-color: #b42f14;
 }
 
 
 
-#site-logo img{
+#site-logo img {
     text-decoration: none;
     color: inherit;
     width: 70px;
     height: 70px;
+}
+
+#site-logo {
+    float: left;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    align-items: center;
 }
 
 ul li {
@@ -52,14 +60,6 @@ ul li a {
     height: 100%;
 }
 
-#site-logo {
-    float: left;
-    height: 90px;
-    width: 90px;
-    display: flex;
-    align-items: center;
-}
-
 #nav-links {
     height: 100%;
     display: flex;
@@ -67,11 +67,11 @@ ul li a {
     float: right;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-.link-header{
+.link-header {
     margin: 0px 8px;
 }
 
@@ -84,7 +84,7 @@ ul li.link-header a {
     margin-top: 0px;
 }
 
-#cabezaPrincipal{
+#cabezaPrincipal {
     height: 88px;
 }
 
@@ -96,7 +96,7 @@ ul li.link-header a {
 }
 
 p {
-    /*Ayuda al footer para que el padding este simetrico*/
+    /* Ayuda al footer para que el padding esté simétrico */
     margin: 0px;
 }
 
@@ -129,22 +129,23 @@ p {
 
 /* MAIN */
 /* PORTADA */
-.conten-page{
-    margin-top: 88px;/*Para que no se superponga el header*/
+.conten-page {
+    margin-top: 88px; /* Para que no se superponga el header */
 }
-.portada{
+
+.portada {
     background-image: url(../images/banner/banner-01.jpg);
     height: 88.2vh;
     background-size: cover;
     background-repeat: repeat;
     background-position: center center;
-    padding: 0px 60px;
+    padding: 0 60px;
     display: table;
     width: 100%;
     background-position: left;
 }
 
-#bandasPorPais{
+#bandasPorPais {
     background-image: url(../images/banner/banner-02.jpg);
     height: 80vh;
     background-size: cover;
@@ -156,18 +157,19 @@ p {
     background-position: left;
 }
 
-#galeria{
+#galeria {
     background-image: url(../images/banner/banner-03.jpg);
-    height: 110vh;
+    height: 95vh;
     background-size: cover;
     background-repeat: repeat;
     background-position: center center;
-    padding: 0px 60px;
+    padding: 0 60px;
     display: table;
     width: 100%;
     background-position: left;
 }
-.header-texto{
+
+.header-texto {
     text-align: center;
     color: #180202;
     height: 100%;
@@ -176,55 +178,58 @@ p {
     vertical-align: middle;
 }
 
-img.image-portada{ /*Tamaño de imagen de portada*/
+img.image-portada {
     height: 80%;
 }
 
-#galeria .text-galery{
-    margin: none;
-    padding: 26px;
-} 
-
 /* TABLA */
-.text-table{
+.text-table {
     font-size: medium;
     text-align: center;
 }
-table tr td img.bandera-size{
+
+table tr td img.bandera-size {
     width: 150px;
     height: 100px;
 }
 
-table tr{
-    background-color:#fff5;
+table tr {
+    background-color: #fff5;
     justify-content: center;
     text-align: center;
     box-shadow: 0 0 5px #000000;
 }
-table tr td img{
+
+table tr td img {
     width: 100px;
     height: 100px;
 }
 
-table{
+table {
     height: 100%;
-    border-collapse: collapse
+    border-collapse: collapse;
 }
 
-table tr td{
+table tr td {
     padding: 10px 30px 0 30px;
 }
 
 /* GALERIA */
-.content-text-offerts{
+.content-text-offerts {
     background-image: url(../images/banner/banner-04.jpg);
-    background-size: cover;
-    background-repeat: repeat;
-    display: table;
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen */
+    padding: 0 60px;
     width: 100%;
-    background-position: center;
+    min-height: 80vh; /* Ajusta la altura mínima para evitar que la imagen se descuadre */
+    display: flex; /* Utiliza flexbox para la alineación */
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Asegura que padding y borde no afecten el ancho */
 }
-#cadaArtista{
+
+#cadaArtista {
     display: flex;
     max-width: 1400px;
     width: 100%;
@@ -232,7 +237,7 @@ table tr td{
     justify-content: center;
 }
 
-#cadaArtista img{
+#cadaArtista img {
     width: 300px;
     height: 280px;
     object-fit: cover;
@@ -240,60 +245,64 @@ table tr td{
     padding: 3.5px;
 }
 
-#cadaArtista img:hover{
+#cadaArtista img:hover {
     cursor: pointer;
     opacity: 0.7;
     transition: 0.5s;
 }
 
 /* MERCANCIA */
-.bg-gray{
+.bg-gray {
     background-color: #f3f3f3;
 }
 
-.seccion-ofertas{
-    height: 350px;
+.seccion-ofertas {
+    height: auto; /* La altura se ajustará automáticamente */
     padding: 15px 80px;
     display: flex;
-    place-content: space-around;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    justify-content: space-around; /* Espaciado uniforme alrededor de las tarjetas */
+    overflow: hidden; /* Evita el desbordamiento */
+    box-sizing: border-box; /* Asegura que padding y borde no afecten el ancho */
 }
-.txt-base{
+
+.txt-base {
     text-align: center;
 }
 
-.txt-base-carousel-section-discount{
+.txt-base-carousel-section-discount {
     font-size: 12px;
     color: white;
     background-color: #6270cd;
     border-radius: 8px;
-    padding: 0px 10px;   
+    padding: 0px 10px;
 }
 
-.titleproduct{
+.titleproduct {
     font-size: 17px;
 }
 
-.txt-base-carousel-section-price{
+.txt-base-carousel-section-price {
     font-size: 14px;
     text-align: left;
     color: black;
 }
 
-.txt-base-carousel-section-price label{
-    font-size: 12px!important;
+.txt-base-carousel-section-price label {
+    font-size: 12px !important;
 }
 
-.txt-base-carousel-section-price-dscto{
+.txt-base-carousel-section-price-dscto {
     color: #c47d7d;
     text-decoration: line-through;
 }
 
-.float-right{
+.float-right {
     display: flex;
     float: right;
 }
 
-.botton-small{
+.botton-small {
     display: inline-block;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -305,22 +314,25 @@ table tr td{
     background-color: #e69898;
 }
 
-.botton-small:hover{
+.botton-small:hover {
     cursor: pointer;
     opacity: 0.7;
     transition: 0.5s;
     background-color: #b42f14;
 }
 
-
-.oferta-indiv{
-    height: 310px;
+.oferta-indiv {
     background-color: #f3f3f3c7;
-    max-width: 150%;
+    width: 100%;
+    max-width: 200px; /* Mantiene la forma de las tarjetas */
     border-radius: 6px;
-    
+    margin: 15px; /* Añade espacio entre las tarjetas */
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Añade una sombra */
+    height: auto; /* Altura automática para ajustar el contenido */
 }
-.img-producto{
+
+.img-producto {
     width: 100%;
     max-width: 180px;
     height: auto;
@@ -328,10 +340,18 @@ table tr td{
 }
 
 /* CATEGORIAS */
-.categorias-bg{
+.categorias-bg {
     background: url(/images/banner/banner-05.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    padding: 0 60px;
+    display: table;
+    width: 100%;
+    background-position: left;
 }
-.img-categoria{
+
+.img-categoria {
     width: 200px;
     height: 200px;
     margin-left: auto;
@@ -340,19 +360,25 @@ table tr td{
     cursor: pointer;
 }
 
-.container-categorias{
+.img-categoria:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.container-categorias {
     display: grid;
-    grid-template-columns: repeat(auto-fit,200px);
+    grid-template-columns: repeat(auto-fit, 200px);
     gap: 60px 70px;
     justify-content: space-between;
 }
 
-.categoria-individual{
+.categoria-individual {
     width: 200px;
-    border-radius: 16px;    
+    border-radius: 16px;
 }
 
-.categoria-title{
+.categoria-title {
     font-size: 15px;
     margin-top: 4px;
     text-align: center;
@@ -361,21 +387,21 @@ table tr td{
 }
 
 /* CONTACTO */
-.contacto-bg{
+.contacto-bg {
     background-image: url(../images/banner/banner-06.jpg);
     height: 550px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.formulario{
-    background-color: #f3f3f39b;
+.formulario {
+    background-color: #e3e3e473;
     margin: 10px auto 0 auto;
-    padding: 40px;
+    padding: 30px ;
     width: 76%;
 }
 
-.boton{
+.boton {
     display: inline-block;
     color: rgb(225, 7, 7);
     background-color: #f3f3f3;
@@ -389,7 +415,7 @@ table tr td{
     border: none;
 }
 
-.boton:hover{
+.boton:hover {
     cursor: pointer;
     color: #f3f3f3;
     background-color: #b42f14;
@@ -397,21 +423,23 @@ table tr td{
     transition: 0.6s;
 }
 
-.campo_field{
+.campo_field {
     flex: 1;
     border: 1px solid #b42f14;
-    padding:  6px 8px;
+    padding: 6px 8px;
 }
-.campo{
+
+.campo {
     display: flex;
     margin-bottom: 20px;
 }
 
-.campo_field_textarea{
+.campo_field_textarea {
     height: 100px;
 }
-.campo_label{
-    white-space: nowrap; /* El texto se escriba en una linea */
+
+.campo_label {
+    white-space: nowrap; /* El texto se escriba en una línea */
     flex: 0 0 140px;
     text-align: right;
     padding-right: 20px;
@@ -421,82 +449,87 @@ table tr td{
     justify-content: flex-end;
 }
 
-/* Utilidades: para usarlo como nombre en clases y se reutilicen */
-.padding-r{
+/* Utilidades */
+.padding-r {
     padding-top: 20px;
 }
-.container{
+
+.container {
     width: min(100%, 120rem);
     margin: 0 auto;
 }
-.ml-1{
+
+.ml-1 {
     margin-left: 8px;
 }
 
-.mr-2{
+.mr-2 {
     margin-right: 8px;
 }
 
-.mt-5{
+.mt-5 {
     margin-top: 3px;
 }
-.no-margin{
+
+.no-margin {
     margin: 0px;
 }
 
-.no-margin-t{
+.no-margin-t {
     margin-top: 0;
 }
-.no-padding{
+
+.no-padding {
     padding: none;
 }
 
-.light{
+.light {
     color: #ffffff;
 }
 
-h2.dark{
+h2.dark {
     color: #1a1818;
 }
 
-h2{
+h2 {
     font-size: 4rem;
 }
 
-.text-start{
+.text-start {
     text-align: start;
 }
 
-.text-right{
-    text-align:right;
+.text-right {
+    text-align: right;
 }
 
-.text-center{
-    text-align:center;
+.text-center {
+    text-align: center;
 }
+
 .d-flex {
     display: flex;
 }
 
-.border-title{
+.border-title {
     border-bottom: 10px solid #1d169c;
     width: 78%;
 }
 
-.description-title{
+.description-title {
     color: #f9f9f9;
     font-size: 15px;
 }
 
-.title{
+.title {
     font-size: 80px;
 }
 
-.contenedor-imagen{
+.contenedor-imagen {
     display: flex;
     justify-content: center;
     align-items: center;
-    height:100%;
+    height: 100%;
 }
 
 /* FUENTES */
@@ -504,107 +537,132 @@ h2{
     font-family: "Kanit", sans-serif;
     font-weight: 100;
     font-style: normal;
-  }
-  
-  .kanit-extralight {
-    font-family: "Kanit", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .kanit-light {
-    font-family: "Kanit", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .kanit-regular {
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+}
 
-  
-  .kanit-medium {
-    font-family: "Kanit", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .kanit-semibold {
-    font-family: "Kanit", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .kanit-bold {
-    font-family: "Kanit", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .kanit-extrabold {
-    font-family: "Kanit", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .kanit-black {
-    font-family: "Kanit", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .kanit-thin-italic {
-    font-family: "Kanit", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .kanit-extralight-italic {
+.kanit-extralight {
     font-family: "Kanit", sans-serif;
     font-weight: 200;
-    font-style: italic;
-  }
-  
-  .kanit-light-italic {
+    font-style: normal;
+}
+
+.kanit-light {
     font-family: "Kanit", sans-serif;
     font-weight: 300;
-    font-style: italic;
-  }
-  
-  .kanit-regular-italic {
+    font-style: normal;
+}
+
+.kanit-regular {
     font-family: "Kanit", sans-serif;
     font-weight: 400;
-    font-style: italic;
-  }
-  
-  .kanit-medium-italic {
+    font-style: normal;
+}
+
+.kanit-medium {
     font-family: "Kanit", sans-serif;
     font-weight: 500;
-    font-style: italic;
-  }
-  
-  .kanit-semibold-italic {
+    font-style: normal;
+}
+
+.kanit-semibold {
     font-family: "Kanit", sans-serif;
     font-weight: 600;
-    font-style: italic;
-  }
-  
-  .kanit-bold-italic {
+    font-style: normal;
+}
+
+.kanit-bold {
     font-family: "Kanit", sans-serif;
     font-weight: 700;
-    font-style: italic;
-  }
-  
-  .kanit-extrabold-italic {
+    font-style: normal;
+}
+
+.kanit-extrabold {
     font-family: "Kanit", sans-serif;
     font-weight: 800;
-    font-style: italic;
-  }
-  
-  .kanit-black-italic {
+    font-style: normal;
+}
+
+.kanit-black {
     font-family: "Kanit", sans-serif;
     font-weight: 900;
-    font-style: italic;
-  }  
+    font-style: normal;
+}
+
+/* Media Queries para ajustar la responsividad */
+@media screen and (max-width: 1024px) {
+    .content-text-offerts {
+        padding: 0 40px; /* Ajuste de padding en pantallas medianas */
+        min-height: 60vh; /* Ajusta la altura mínima en pantallas medianas */
+        background-position: center center; /* Asegura que la imagen se mantenga centrada */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-text-offerts {
+        padding: 0 20px; /* Ajusta el padding en pantallas pequeñas */
+        min-height: 50vh; /* Menor altura en pantallas más pequeñas */
+        background-position: center center; /* Mantiene la imagen centrada */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content-text-offerts {
+        padding: 0 10px; /* Ajusta el padding para móviles */
+        min-height: 40vh; /* Ajusta la altura mínima en pantallas más pequeñas */
+        background-position: center center; /* Asegura que la imagen esté centrada */
+    }
+}
+
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    .seccion-ofertas {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .oferta-indiv {
+        flex: 1 1 45%;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .seccion-ofertas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .oferta-indiv {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        max-width: 200px; /* Mantiene la forma de la tarjeta */
+    }
+}
+
+/* Media Queries para ajustar las tarjetas en pantallas más pequeñas */
+@media screen and (max-width: 1024px) {
+    .seccion-ofertas {
+        padding: 15px 40px; /* Reduce el padding en pantallas medianas */
+    }
+    .oferta-indiv {
+        flex: 1 1 45%; /* Ajusta el tamaño de las tarjetas en pantallas medianas */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .seccion-ofertas {
+        flex-direction: column; /* Coloca las tarjetas una debajo de otra en pantallas pequeñas */
+        padding: 15px 20px;
+    }
+    .oferta-indiv {
+        max-width: 100%; /* Las tarjetas ocupan todo el ancho en pantallas pequeñas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .seccion-ofertas {
+        padding: 15px 10px; /* Aún menos padding en móviles */
+    }
+    .oferta-indiv {
+        max-width: 100%; /* Las tarjetas ocupan todo el ancho en móviles */
+    }
+}
