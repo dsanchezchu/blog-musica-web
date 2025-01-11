@@ -6,5 +6,6 @@ window.addEventListener('load', () => {
 
     setTimeout(() => {
         spinnerLoader.style.display = 'none';
+        spinnerLoader.remove();
     }, 200);
 });

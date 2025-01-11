@@ -30,25 +30,50 @@
     <!-- Acá va la barra de navegación y logo -->
     <div id="page-rock">
         <!-- Header -->
-        <div id="header-rock" class="fixed-header">
-            <header id="cabezaPrincipal">
-                <div class="wrapper">
-                    <section id="site-logo">
-                        <a href="/index.html"><img src="/images/logo/logo-rock.png" alt="logo-pagina"></a>
-                    </section>
-                    <section id="nav-links">
-                        <nav>
-                            <ul class="d-flex align-items-center justify-content-end w-100">
-                                <li class="link-header text-link kanit-light"><a>Artistas</a></li>
-                                <li class="link-header text-link kanit-light"><a>Sobre Nosotros</a></li>
-                                <li class="link-header text-link kanit-light"><a href="/sections/colaborar/colaborar.html">Colaborar</a></li>
-                                <li class="link-header text-link kanit-light"><a href="/sections/iniciar sesion/login.html" class="btn btn-warning">Iniciar Sesión</a></li>
-                            </ul>
-                        </nav>
-                    </section>
+        <nav class="navbar nav-primary-color border-bottom border-danger fixed-top" style="height: 70px;">
+            <div class="container">
+                <div class="container-flex">
+                    <a class="navbar-brand" href="#">
+                      <img src="/images/logo/logo-rock.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                      Rock Latam
+                    </a>
+                  </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end menu-color" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-dark bg-warning" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body menu-color">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/sections/nosotros/">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item"></li>
+                                <a class="nav-link" href="/sections/foro/foro.html">FORO</a>
+                            </li>
+                            <li class="nav-item"></li>
+                                <a class="nav-link" href="/sections/colaborar/colaborar.html">COLABORAR</a>
+                            </li>
+                            <li class="nav-item"></li>
+                                <a class="nav-link" href="/sections/iniciar sesion/login.html">LOGIN</a>
+                            </li>
+                            <li class="nav-item"></li>
+                                <a class="nav-link" href="#">PROFILE</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </header>
-        </div>
+            </div>
+        </nav>
         <!-- Mi contenido principal -->
         <main>
             <div class="conten-page">

@@ -19,7 +19,7 @@ html {
 
 
 
-/* HEADER */
+/********************************* HEADER *********************************/
 *,
 *:before,
 *:after {
@@ -40,7 +40,7 @@ body {
     width: 100%;
     z-index: 1000;
     transition: height .3s;
-    background-color: #b42f14;
+    background-color: #99817c;
 }
 
 
@@ -143,10 +143,10 @@ p {
     margin-bottom: 0px;
 }
 
-/* MAIN */
-/* PORTADA */
+/********************************* MAIN *********************************/
+/********************************* PORTADA *********************************/
 .conten-page {
-    margin-top: 88px; /* Para que no se superponga el header */
+    margin-top: 70px; /* Para que no se superponga el header */
 }
 
 .portada {
@@ -352,7 +352,7 @@ table tr td {
     padding-top: 20px;
 }
 
-/* CATEGORIAS */
+/********************************* CATEGORIAS *********************************/
 .categorias-bg {
     background: url(/images/banner/banner-05.jpg);
     background-size: cover;
@@ -572,6 +572,27 @@ body.body-login, html.loginHtml{
     background-color: #f50f0fa8;
 }
 
+.nav-primary-color{
+    background-color: #C33232;
+}
+
+.menu-color{
+    background-color: #f3f3f3;
+    color: #010009;
+}
+
+.buttom-return{
+    padding-top: 80px;
+    padding-right: 120px;
+    @media (max-width: 768px) {
+        padding-top: 70px;
+        padding-right: 12px;
+    }
+    @media (max-width: 883px) and (min-width: 576px) {
+        padding-top: 70px;
+        padding-right: 30px;
+    }
+}
 .input-group-text{
     color: #fd0303!important;
     height: 40px!important;
@@ -593,7 +614,7 @@ body.body-login{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: linear-gradient(90deg, rgba(2, 0, 1, 0.916) 0%, #06035e 35%, #2b05d3 100%);
+    background: linear-gradient(90deg, #8B3D7A 0%, #B12D5E 35%, #C33232 100%);
 
 }
 
