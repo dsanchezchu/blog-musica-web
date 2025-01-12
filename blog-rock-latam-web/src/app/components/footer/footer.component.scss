@@ -1,0 +1,89 @@
+$footer-background-color: #8272D0;
+$footer-text-color: #ffffff;
+$social-icon-color: #E2E2B6;
+$social-icon-size: 24px;
+$social-icon-spacing: 20px;
+$social-icon-hover-opacity: 1;
+$social-icon-default-opacity: 0.7;
+
+/***************************| FOOTER |************************************/
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el footer esté siempre en la parte inferior de la página */
+}
+
+#content {
+  flex: 1;
+}
+
+
+
+footer {
+  background-color: $footer-background-color;
+  color: $footer-text-color;
+  padding: 10px 0;
+  position: absolute; /* Asegura que el footer no se superponga a otros componentes */
+  bottom: 0; /* Asegura que el footer esté siempre en la parte inferior de la página */
+  width: 100%; /* Asegura que el footer ocupe todo el ancho de la página */
+  
+  .footer-basico {
+    padding: 10px 0;
+    background-color: $footer-background-color;
+    color: $footer-text-color;
+
+    p {
+      // Ayuda al footer para que el padding esté simétrico
+      margin: 0;
+    }
+
+    .social {
+      text-align: center;
+
+      > ion-icon {
+        font-size: $social-icon-size;
+        width: 30px;
+        height: 30px;
+        line-height: 40px;
+        display: inline-block;
+        text-align: center;
+        color: $social-icon-color;
+        margin: 0 $social-icon-spacing;
+        opacity: $social-icon-default-opacity;
+
+        &:hover {
+          opacity: $social-icon-hover-opacity;
+        }
+      }
+
+      // Para otros iconos si es necesario
+      > i {
+        font-size: $social-icon-size;
+        width: 30px;
+        height: 30px;
+        line-height: 40px;
+        display: inline-block;
+        text-align: center;
+        color: $social-icon-color;
+        margin: 0 $social-icon-spacing;
+        opacity: $social-icon-default-opacity;
+
+        &:hover {
+          opacity: $social-icon-hover-opacity;
+        }
+      }
+    }
+
+    .copyright {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+  }
+}
