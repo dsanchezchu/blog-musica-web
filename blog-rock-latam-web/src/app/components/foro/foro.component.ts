@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ViewEncapsulation } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -6,7 +7,8 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   templateUrl: './foro.component.html',
-  styleUrl: './foro.component.scss'
+  styleUrl: './foro.component.scss',
+  encapsulation: ViewEncapsulation.None,
 })
 export class ForoComponent {
 
