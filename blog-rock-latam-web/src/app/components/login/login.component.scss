@@ -1,0 +1,160 @@
+/* Estilos para el login */
+.wrapper-login{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, #8B3D7A 0%, #B12D5E 35%, #C33232 100%);
+}
+.login {
+    position: relative;  /* Asegura que el contenido se coloque encima de la animación */
+    width: 350px;
+    height: 360px;
+    border: 1px solid #ad4834;
+    border-radius: 20px;
+    margin: auto 0;
+    background-color: #f50f0fa8;
+    z-index: 10; /* Asegura que el login se muestra por encima de la animación */
+  }
+  
+.buttom-return {
+    padding-top: 80px;
+    padding-right: 120px;
+    @media (max-width: 768px) {
+      padding-top: 70px;
+      padding-right: 12px;
+    }
+    @media (max-width: 883px) and (min-width: 576px) {
+      padding-top: 70px;
+      padding-right: 30px;
+    }
+}
+  
+  .input-group-text {
+    color: #fd0303 !important;
+    height: 40px !important;
+    border-radius: 0 0 0 10px !important;
+  }
+  
+  .imageLogo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  body.body-login {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor de la animación */
+  .animation-wrapper {
+    position: fixed; // Cambiado de absolute a fixed
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; // Cambiado de -1 a 0
+    pointer-events: none; // Añadido para evitar interferencias con el contenido
+  }
+  
+  .box {
+    position: relative; // Cambiado de absolute a relative
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .box div {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(238, 234, 234, 0.1); // Añadido background-color semitransparente
+    border: 6px solid rgba(238, 234, 234, 0.3); // Ajustada la opacidad del borde
+    animation-fill-mode: both; // Añadido para mejorar la animación
+  }
+  
+  
+  .box div:nth-child(1) {
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+  }
+  
+  .box div:nth-child(2) {
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+  }
+  
+  .box div:nth-child(3) {
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+  }
+  
+  .box div:nth-child(4) {
+    top: 20%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+  }
+  
+  .box div:nth-child(5) {
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+  }
+  
+  .box div:nth-child(6) {
+    top: 80%;
+    left: 76%;
+    animation: animate 12s linear infinite;
+  }
+  
+  .box div:nth-child(7) {
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+  }
+  
+  .box div:nth-child(8) {
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+  }
+  
+  .box div:nth-child(9) {
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+  }
+  
+  .box div:nth-child(10) {
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+  }
+  
+  .box div:nth-child(11) {
+    top: 10%;
+    left: 50%;
+    animation: animate 5s linear infinite;
+    border-radius: 50px;
+  }
+  
+  .box div:nth-child(12) {
+    top: 20%;
+    left: 10%;
+    animation: animate 11s linear infinite;
+    border-radius: 50px;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: scale(0) translateY(0) rotate(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.3) translateY(-90px) rotate(360deg);
+      opacity: 0;
+    }
+  }

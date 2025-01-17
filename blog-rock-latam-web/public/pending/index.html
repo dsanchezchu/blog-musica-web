@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon" href="/images/logo/logo-rock.ico" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="/script/script.js"></script>
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Rock Latam</title>
+</head>
+
+<body>
+    <div class="spinner-wrapper">
+        <div class="spinner-border text-danger" style="width: 4rem; height: 4rem;" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    
+    <!-- Acá va la barra de navegación y logo -->
+    <div id="page-rock">
+        <!-- Header -->
+        <nav class="navbar nav-primary-color border-bottom border-danger fixed-top" style="height: 70px;">
+            <div class="container">
+                <div class="container-flex">
+                    <a class="navbar-brand" href="#">
+                      <img src="/images/logo/logo-rock.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                      Rock Latam
+                    </a>
+                  </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end menu-color" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-dark bg-warning" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body menu-color">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/sections/nosotros/">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item"></li>
+                                <a class="nav-link" href="/sections/foro/foro.html">FORO</a>
+                            </li>
+                            <li class="nav-item"></li>
+                                <a class="nav-link" href="/sections/colaborar/colaborar.html">COLABORAR</a>
+                            </li>
+                            <li class="nav-item"></li>
+                                <a class="nav-link" href="/sections/iniciar sesion/login.html">LOGIN</a>
+                            </li>
+                            <li class="nav-item"></li>
+                                <a class="nav-link" href="#">PROFILE</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Mi contenido principal -->
+        <main>
+            <div class="conten-page">
+                <section>
+                    <div class="portada">
+                        <div class="header-texto">
+                            <h2 class="no-margin kanit-regular light title text-start ">Rock Latam</h2>
+                            <div class="no-margin border-title"></div>
+                            <p class="no-margin text-start kanit-light description-title">El rock argentino a traves de
+                                su
+                                instrumentos hacen el arte y
+                                transmiten <br>el sentmiento a
+                                traves de sus canciones, por eso en esta pagina encontrar<br> todo relacionado al rock
+                                en
+                                latinoamerica.
+                            </p>
+                        </div>
+                        <aside class="contenedor-imagen">
+                            <!-- <img class="no-margin image-portada" src="/images/bandas/fondo01.png" -->
+                            <!-- alt="artistasRockLatam"> -->
+                            <img src="/images/logo/logo-rock.png" class="img-fluid" alt="portada imagen">
+                        </aside>
+                    </div>
+                </section>
+                <!-- Categorias -->
+                <section class="categorias-bg">
+                    <div class="container">
+                        <h2 class="text-center kanit-regular no-margin-t light">Categorias</h2>
+                        <div class="container-categorias">
+                            <div class="categoria-individual">
+                                <img src="/images/categorias/rock-peruano.jpg" alt="categoria-rock-peruano"
+                                    class="img-categoria">
+                                <h4 class="categoria-title kanit-light light">Rock Peruano</h4>
+                            </div>
+                            <div class="categoria-individual">
+                                <img src="/images/categorias/rock-boliviano.jpg" alt="categoria-rock-boliviano"
+                                    class="img-categoria">
+                                <h4 class="categoria-title kanit-light light">Rock Boliviano</h4>
+                            </div>
+                            <div class="categoria-individual">
+                                <img src="/images/categorias/rock-chileno.png" alt="categoria-rock-chileno"
+                                    class="img-categoria">
+                                <h4 class="categoria-title kanit-light light">Rock Chileno</h4>
+                            </div>
+                            <div class="categoria-individual">
+                                <img src="/images/categorias/rock-argentino.jpg" alt="categoria-rock-argentino"
+                                    class="img-categoria">
+                                <h4 class="categoria-title kanit-light light">Rock Argentino</h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Tabla de bandas de rock por pais -->
+                <section id="bandasPorPais">
+                    <table class="kanit-regular container">
+                        <tr>
+                            <td class="bandera"><img class="bandera-size" src="/images/banderas/bandera-peru.png"
+                                    alt="bandera-peru" height="90"">
+                                <p class=" no-margin text-table ">Peru</p></td>
+                            <td><img src=" /images/bandas/arena-hashjpg.jpg" alt="arena-hash" width="90" height="90">
+                                <p class="no-margin text-table">Arena Hash</p>
+                            </td>
+                            <td><img src="/images/bandas/libido.jpg" alt="libido" width="90" height="90">
+                                <p class="no-margin text-table">Libido</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bandera"><img class="bandera-size" src="/images/banderas/bandera-argentina.png"
+                                    alt="bandera-argentina">
+                                <p class="no-margin text-table dark">Argentina</p>
+                            </td>
+                            <td><img src="/images/bandas/soda-stereo.jpg" alt="soda-stereo">
+                                <p class="no-margin text-table">Soda Stereo</p>
+                            </td>
+                            <td><img src="/images/bandas/autenticos-decadentes.jpg" alt="autenticos-decadentes">
+                                <p class="no-margin text-table">Autenticos Decadentes</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bandera"><img class="bandera-size" src="/images/banderas/bandera-chile.png "
+                                    height="90">
+                                <p class="no-margin text-table ">Chile</p>
+                            </td>
+                            <td><img src="/images/bandas/los prisioneros.jpg" alt="los-prisioneros">
+                                <p class="no-margin text-table">Los Prisioneros</p>
+                            </td>
+                            <td><img src="/images/bandas/los-bumkers.jpg" alt="arena-hash">
+                                <p class="no-margin text-table">Los Bunkers</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="header-texto">
+                        <h2 class="no-margin  light sub-title text-right">Bandas de rock por país</h2>
+                    </div>
+
+                </section>
+                <!-- Ofertad del dias -->
+                <section id="ofertasDia" class="content-text-offerts ">
+                    <h2 class="text-center kanit-regular">Ofertas del dia</h2>
+                    <div class="seccion-ofertas">
+                        <!-- Componente 01 -->
+                        <div class="oferta-indiv">
+                            <div>
+                                <img class="img-producto" src="/images/mercancia/polo-01.png" alt="polo-cerati">
+                            </div>
+                            <div class="txt-base">
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">-10%</span>
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">Polo de estreno</span>
+                            </div>
+                            <div style="margin-top: 8px;">
+                                <span class="ml-1 kanit-regular titleproduct">Polo de soda stereo</span>
+                            </div>
+                            <div class="ml-1">
+                                <div class="txt-base-carousel-section-price ml-2 kanit-regular">S/4.50
+                                    <label
+                                        class="txt-base-carousel-section-price txt-base-carousel-section-price-dscto">S/6.50</label>
+                                </div>
+                            </div>
+                            <div class="float-right mr-2 mt-5">
+                                <input type="submit" value="Agregar" class="botton-small kanit-regular">
+                            </div>
+                        </div>
+                        <!-- Componente 02 -->
+                        <div class="oferta-indiv">
+                            <div>
+                                <img class="img-producto" src="/images/mercancia/polo-02.png" alt="polo-rock">
+                            </div>
+                            <div class="txt-base">
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">-10%</span>
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">Polo de estreno</span>
+                            </div>
+                            <div style="margin-top: 8px;">
+                                <span class="ml-1 kanit-regular titleproduct">Polo de soda stereo</span>
+                            </div>
+                            <div class="ml-1">
+                                <div class="txt-base-carousel-section-price ml-2 kanit-regular">S/4.50
+                                    <label
+                                        class="txt-base-carousel-section-price txt-base-carousel-section-price-dscto">S/6.50</label>
+                                </div>
+                            </div>
+                            <div class="float-right mr-2 mt-5">
+                                <input type="submit" value="Agregar" class="botton-small kanit-regular">
+                            </div>
+                        </div>
+                        <!-- Componente 03 -->
+                        <div class="oferta-indiv">
+                            <div>
+                                <img class="img-producto" src="/images/mercancia/polo-03.png" alt="polo-ramnstein">
+                            </div>
+                            <div class="txt-base">
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">-10%</span>
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">Polo de estreno</span>
+                            </div>
+                            <div style="margin-top: 8px;">
+                                <span class="ml-1 kanit-regular titleproduct">Polo de soda stereo</span>
+                            </div>
+                            <div class="ml-1">
+                                <div class="txt-base-carousel-section-price ml-2 kanit-regular">S/4.50
+                                    <label
+                                        class="txt-base-carousel-section-price txt-base-carousel-section-price-dscto">S/6.50</label>
+                                </div>
+                            </div>
+                            <div class="float-right mr-2 mt-5">
+                                <input type="submit" value="Agregar" class="botton-small kanit-regular">
+                            </div>
+                        </div>
+                        <!-- Componente 04 -->
+                        <div class="oferta-indiv">
+                            <div>
+                                <img class="img-producto" src="/images/mercancia/polo-04.png" alt="polo-radiohead">
+                            </div>
+                            <div class="txt-base">
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">-10%</span>
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">Polo de estreno</span>
+                            </div>
+                            <div style="margin-top: 8px;">
+                                <span class="ml-1 kanit-regular titleproduct">Polo de soda stereo</span>
+                            </div>
+                            <div class="ml-1">
+                                <div class="txt-base-carousel-section-price ml-2 kanit-regular">S/4.50
+                                    <label
+                                        class="txt-base-carousel-section-price txt-base-carousel-section-price-dscto">S/6.50</label>
+                                </div>
+                            </div>
+                            <div class="float-right mr-2 mt-5">
+                                <input type="submit" value="Agregar" class="botton-small kanit-regular">
+                            </div>
+                        </div>
+                        <!-- Componente 04 -->
+                        <div class="oferta-indiv">
+                            <div>
+                                <img class="img-producto" src="/images/mercancia/polo-05.png" alt="polo-artick-monkeys">
+                            </div>
+                            <div class="txt-base">
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">-10%</span>
+                                <span class="txt-base-carousel-section-discount kanit-thin ml-1">Polo de estreno</span>
+                            </div>
+                            <div style="margin-top: 8px;">
+                                <span class="ml-1 kanit-regular titleproduct">Polo de soda stereo</span>
+                            </div>
+                            <div class="ml-1">
+                                <div class="txt-base-carousel-section-price ml-2 kanit-regular">S/4.50
+                                    <label
+                                        class="txt-base-carousel-section-price txt-base-carousel-section-price-dscto">S/6.50</label>
+                                </div>
+                            </div>
+                            <div class="float-right mr-2 mt-5">
+                                <input type="submit" value="Agregar" class="botton-small kanit-regular">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Galeria de fotos -->
+                <section id="galeria">
+                    <div class="text-galery">
+                        <h2 class=" text-center sub-title no-margin kanit-regular">Galeria de fotos de artistas</h2>
+                    </div>
+                    <section id="cadaArtista">
+                        <a href="/images/artistas/andres-calamaro.jpg" target="_blank"><img
+                                src="/images/artistas/andres-calamaro.jpg" alt="andres-calamaro"></a>
+                        <a href="/images/artistas/bon-y-los-enemigos-del-silencio.jpg" target="_blank"><img
+                                src="/images/artistas/bon-y-los-enemigos-del-silencio.jpg"
+                                alt="bon-y-los-enemigos-del-silencio"></a>
+                        <a href="/images/artistas/caifanes.jpg" target="_blank"><img src="/images/artistas/caifanes.jpg"
+                                alt="caifanes"></a>
+                        <a href="/images/artistas/charly-garcia.jpg" target="_blank"><img
+                                src="/images/artistas/charly-garcia.jpg" alt="charly-garcia"></a>
+                        <a href="/images/artistas/enanitos-verdes.jpg" target="_blank"><img
+                                src="/images/artistas/enanitos-verdes.jpg" alt="enanitos-verdes"></a>
+                        <a href="/images/artistas/fito-paez.jpg" target="_blank"><img
+                                src="/images/artistas/fito-paez.jpg" alt="fito-paez"></a>
+                        <a href="/images/artistas/pedro-suarez-vertiz.jpg" target="_blank"><img
+                                src="/images/artistas/pedro-suarez-vertiz.jpg" alt="pedro-suarez-vertiz"></a>
+                        <a href="/images/artistas/jorge-gonzales.jpg" target="_blank"><img
+                                src="/images/artistas/jorge-gonzales.jpg" alt="jorge-gonzales"></a>
+                    </section>
+                </section>
+            </div>
+        </main>
+        <!-- Ayudanos a mejor -->
+        <!-- Infomacion de cierre -->
+        <footer id="piePagina">
+            <div class="contacto-bg">
+                <section class="container">
+                    <header>
+                        <h2 class="no-margin text-center kanit-bold padding-r">Formulario de contacto</h2>
+                        <p class="text-center kanit-light">Si quieres contactarnar con nosotros y darnos alguna idea
+                            llena los
+                            siguientes campos</p>
+                    </header>
+                    <section>
+                        <form class="formulario">
+                            <div class="campo">
+                                <label class="form-label campo_label kanit-regular" for="nombre">Nombre</label>
+                                <input class="form-control kanit-light" type="text" id="nombre"
+                                    placeholder="Su nombre y apellido" required><br>
+                            </div>
+                            <div class="campo">
+                                <label class="form-label campo_label kanit-regular" for="correo">Correo Electronico</label>
+                                <input class="form-control kanit-light " type="email" id="correo"
+                                    placeholder="ejemplo@tucorreo.com" required><br>
+                            </div>
+                            <div class="campo">
+                                <label class="campo_label kanit-regular" for="form-label detalles">Detalla tu idea</label>
+                                <textarea class="form-control  kanit-light campo_field_textarea " name="mensaje"
+                                    id="mensaje" rows="4" placeholder="cuentanos tu idea..."
+                                    required></textarea><br>
+                            </div>
+                            <div class="campo "><input class="kanit-regular boton" type="submit" value="Enviar"></div>
+                        </form>
+                    </section>
+                </section>
+            </div>
+            <section id="cierre" class="footer-basico">
+                <section id="redesSociales" class="social">
+                    <ion-icon name="logo-whatsapp" size="small"></ion-icon>
+                    <ion-icon name="logo-instagram" size="small"></ion-icon>
+                    <ion-icon name="logo-facebook" size="small"></ion-icon>
+                </section>
+                <section id="copyright" class="copyright kanit-light">
+                    <p>Rock Latam <br>Trujillo-Peru<br>Todos los derechos reservados &#169 2024</p>
+                </section>
+            </section>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

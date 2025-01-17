@@ -1,0 +1,38 @@
+$footer-background-color: #8272D0;
+$footer-text-color: #ffffff;
+$social-icon-color: #E2E2B6;
+$social-icon-size: 24px;
+$social-icon-spacing: 20px;
+$social-icon-hover-opacity: 1;
+$social-icon-default-opacity: 0.7;
+
+footer {
+  background-color: $footer-background-color;
+  color: $footer-text-color;
+  padding: 20px 0;
+  width: 100%;
+  margin-top: auto; // Empuja el footer hacia abajo
+  text-align: center;
+
+  .footer-basico {
+    .social {
+      margin-bottom: 10px;
+
+      i {
+        font-size: $social-icon-size;
+        margin: 0 $social-icon-spacing;
+        color: $social-icon-color;
+        opacity: $social-icon-default-opacity;
+
+        &:hover {
+          opacity: $social-icon-hover-opacity;
+        }
+      }
+    }
+
+    .copyright {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+  }
+}

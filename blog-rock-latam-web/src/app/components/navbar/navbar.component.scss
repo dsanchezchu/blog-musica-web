@@ -1,0 +1,23 @@
+$primary-color: #C33232;
+
+#nav-links {
+  height: 120%;
+  display: flex;
+  align-items: center;
+  float: right;
+
+  // Puedes anidar estilos relacionados con #nav-links aquí
+  a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+.nav-primary-color {
+  background-color: $primary-color;
+}
