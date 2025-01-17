@@ -14,7 +14,7 @@ Blog de música
 - **JavaScript**: Para la interactividad y funcionalidades dinámicas.
 - **Bootstrap 5**: Para el diseño responsivo y componentes predefinidos.
 - **Google Fonts**: Para las fuentes tipográficas.
-- **Ionicons**: Para los iconos.
+- **Bootstrap Icons**: Para los iconos.
 - **GitHub**: Para el control de versiones y la colaboración.
 - **Angular 18.2.12**: Para el desarrollo del frontend.
 
