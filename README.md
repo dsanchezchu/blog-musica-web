@@ -167,4 +167,3 @@ Sin embargo, no puedes:
 * Utilizar el nombre del software para promocionar tu propio producto sin permiso explícito.
 
 Recuerda que, al contribuir a este proyecto, estás de acuerdo con los términos de la licencia MIT.
-
