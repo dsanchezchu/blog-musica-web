@@ -1,0 +1,15 @@
+$form-colab-border-color: #b42f14; // Define una variable para el color del borde
+
+main {
+    margin-top: 70px; // Ajustar según la altura real del navbar
+    min-height: calc(100vh - 70px - 120px); // Altura total menos navbar y footer
+    display: flex;
+    flex-direction: column;
+  }
+    
+.form-colab-rock {
+    margin: 0 0 24px 0;
+    padding: 10px 20px;
+    border: 1px solid $form-colab-border-color;
+    flex: 1;
+  }

@@ -4,59 +4,133 @@ Rock Latam es un sitio web dedicado a la música rock en Latinoamérica. Aquí p
 
 ## Estructura del Proyecto
 
-Blog de música
-[https://rocklatam.netlify.app/](https://rocklatam.netlify.app/) (Pagina Aqui)
 
+### Estructura de Carpetas
+
+```bash
+📂 rock-latam-back-app
+├── 📂 app
+│   ├── 📂 Http
+│   ├── 📂 Models
+│   └── 📂 Providers
+├── 📂 bootstrap
+│   └── 📂 cache
+├── 📂 config
+├── 📂 database
+│   ├── 📂 factories
+│   ├── 📂 migrations
+│   └── 📂 seeders
+├── 📂 public
+├── 📂 resources
+│   ├── 📂 css
+│   ├── 📂 js
+│   └── 📂 views
+├── 📂 routes
+├── 📂 storage
+│   ├── 📂 app
+│   ├── 📂 framework
+│   └── 📂 logs
+├── 📂 tests
+│   ├── 📂 Feature
+│   └── 📂 Unit
+└── 📂 vendor
+
+📂 blog-rock-latam-web
+├── 📂 .vscode
+│   ├── 📄 extensions.json
+│   ├── 📄 launch.json
+│   └── 📄 tasks.json
+├── 📂 public
+│   └── 📂 pending
+│       └── 📄 index.html
+├── 📂 src
+│   ├── 📂 app
+│   │   ├── 📄 app.component.html
+│   │   ├── 🎨 app.component.scss
+│   │   ├── 🧪 app.component.spec.ts
+│   │   ├── 📄 app.component.ts
+│   │   ├── ⚙️ app.config.ts
+│   │   ├── 🌐 app.routes.ts
+│   │   └── 📂 components
+│   │       ├── 📂 bandas
+│   │       ├── 📂 collaborate
+│   │       ├── 📂 comment
+│   │       ├── 📂 contacto
+│   │       ├── 📂 footer
+│   │       ├── 📂 foro
+│   │       ├── 📂 galeria
+│   │       ├── 📂 home
+│   │       ├── 📂 login
+│   │       ├── 📂 navbar
+│   │       ├── 📂 nosotros
+│   │       ├── 📂 ofertas
+│   │       ├── 📂 register
+│   │       └── 📂 userprofile
+│   ├── 📂 assets
+│   │   ├── 📂 images
+│   │   │   ├── 📂 artistas
+│   │   │   ├── 📂 bandas
+│   │   │   ├── 📂 banderas
+│   │   │   ├── 📂 banner
+│   │   │   ├── 📂 categorias
+│   │   │   ├── 📂 logo
+│   │   │   └── 📂 mercancia
+│   ├── 📄 index.html
+│   ├── 📄 main.ts
+│   ├── 🎨 style.css
+│   └── 🎨 styles.scss
+├── 📄 .editorconfig
+├── 📄 .gitignore
+├── ⚙️ angular.json
+├── 📄 package-lock.json
+├── 📄 package.json
+├── 📄 README.md
+├── 📄 tsconfig.app.json
+├── 📄 tsconfig.json
+└── 📄 tsconfig.spec.json
+```
 
 ## Tecnologías Utilizadas
 
+- **PHP 8.0**: Para el desarrollo del backend.
+- **Laravel 11**: Para el manejo de la lógica de la aplicación.
 - **HTML5**: Para la estructura del contenido.
 - **CSS3**: Para el diseño y la presentación visual.
 - **JavaScript**: Para la interactividad y funcionalidades dinámicas.
 - **Bootstrap 5**: Para el diseño responsivo y componentes predefinidos.
 - **Google Fonts**: Para las fuentes tipográficas.
-- **Ionicons**: Para los iconos.
-- **GitHub**: Para el control de versiones y la colaboración.
+- **Bootstrap Icons**: Para los iconos.
+- **Angular 18.2.12**: Para el desarrollo del frontend.
+- **Node.js**: Para el entorno de ejecución de JavaScript.
+- **NPM**: Para la gestión de paquetes de Node.js.
+- **Composer**: Para la gestión de dependencias de PHP.
 
-## Contenido del Proyecto
-
-### `index.html`
-
-Este archivo contiene la estructura principal del sitio web, incluyendo la barra de navegación, el contenido principal, las categorías, la tabla de bandas por país, las ofertas del día, la galería de fotos y el formulario de contacto.
-
-### `sections/css/style.css`
-
-Este archivo contiene los estilos personalizados para el sitio web, incluyendo la configuración de fuentes, colores, tamaños y disposición de los elementos.
-
-### `/images`
-
-Este directorio contiene todas las imágenes utilizadas en el sitio web, organizadas en subdirectorios para logos, banners, banderas, bandas, categorías, mercancía y artistas.
-
-### `sections/colaborar/colaborar.html`
-
-Este archivo contiene la página de colaboración, donde los usuarios pueden enviar sus ideas a través de un formulario de contacto.
-
-### `sections/iniciar sesion/login.html`
-
-Este archivo contiene la página de inicio de sesión para los usuarios.
-
-### `script/script.js`
-
-Este archivo contiene los scripts JavaScript personalizados para añadir interactividad y funcionalidades dinámicas al sitio web.
 
 ## Instalación
 
 1. Clona el repositorio:
     ```bash
-    git clone https://github.com/tu-usuario/rock-latam.git
+    git clone https://github.com/dsanchezchu/blog-musica-web.git
     ```
 
 2. Navega al directorio del proyecto:
     ```bash
-    cd rock-latam
+    # Backend
+    rock-latam-back-app
+    # Fronted
+    cd blog-rock-latam-web
     ```
 
-3. Abre el archivo `index.html` en tu navegador web.
+3. Inicia el servidor de desarrollo para el frontend en Angular 18.2.11:
+    ```bash
+    ng serve
+    ```
+
+4. Inicia el servidor de desarrollo para el backend en Laravel 11 con Composer:
+    ```bash
+    php artisan serve
+    ```
+
 
 ## Uso
 
@@ -77,4 +151,20 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 4. Sube tus cambios a tu fork (`git push origin feature/nueva-funcionalidad`).
 5. Crea un Pull Request en el repositorio original.
 
----
+## Licencia MIT
+
+Este proyecto está bajo la licencia MIT. Esto significa que puedes:
+
+* Utilizar el software para cualquier propósito, incluyendo uso personal, académico o comercial.
+* Modificar el software para adaptarlo a tus necesidades.
+* Distribuir copias del software.
+* Sublicenciar el software.
+
+Sin embargo, no puedes:
+
+* Quitar o alterar los avisos de copyright y licencia.
+* Afirmar que eres el propietario original del software.
+* Utilizar el nombre del software para promocionar tu propio producto sin permiso explícito.
+
+Recuerda que, al contribuir a este proyecto, estás de acuerdo con los términos de la licencia MIT.
+
