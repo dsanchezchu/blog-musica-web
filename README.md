@@ -1,49 +1,94 @@
 # Rock Latam
+
 Rock Latam es un sitio web dedicado a la música rock en Latinoamérica. Aquí puedes encontrar información sobre artistas, bandas, categorías de rock por país, ofertas de mercancía y una galería de fotos de artistas. Además, puedes colaborar con nosotros enviando tus ideas a través de un formulario de contacto.
 
 ## Estructura del Proyecto
 
+
 ### Estructura de Carpetas
 
-#### 📁 rock-latam-back-app
-- 📁 app
-  - 📁 Http
-  - 📁 Models
-  - 📁 Providers
-- 📁 bootstrap
-  - 📁 cache
-- 📁 config
-- 📁 database
-  - 📁 factories
-  - 📁 migrations
-  - 📁 seeders
-- 📁 public
-- 📁 resources
-  - 📁 css
-  - 📁 js
-  - 📁 views
-- 📁 routes
-- 📁 storage
-  - 📁 app
-  - 📁 framework
-  - 📁 logs
-- 📁 tests
-  - 📁 Feature
-  - 📁 Unit
-- 📁 vendor
+```bash
+📂 rock-latam-back-app
+├── 📂 app
+│   ├── 📂 Http
+│   ├── 📂 Models
+│   └── 📂 Providers
+├── 📂 bootstrap
+│   └── 📂 cache
+├── 📂 config
+├── 📂 database
+│   ├── 📂 factories
+│   ├── 📂 migrations
+│   └── 📂 seeders
+├── 📂 public
+├── 📂 resources
+│   ├── 📂 css
+│   ├── 📂 js
+│   └── 📂 views
+├── 📂 routes
+├── 📂 storage
+│   ├── 📂 app
+│   ├── 📂 framework
+│   └── 📂 logs
+├── 📂 tests
+│   ├── 📂 Feature
+│   └── 📂 Unit
+└── 📂 vendor
 
----
-
-#### 📁 blog-rock-latam-web
-- 📁 .vscode
-- 📁 public
-  - 📁 pending
-- 📁 src
-  - 📁 app
-    - 📁 components
-  - 📁 assets
-    - 📁 images
-  - 📁 styles
+📂 blog-rock-latam-web
+├── 📂 .vscode
+│   ├── 📄 extensions.json
+│   ├── 📄 launch.json
+│   └── 📄 tasks.json
+├── 📂 public
+│   └── 📂 pending
+│       └── 📄 index.html
+├── 📂 src
+│   ├── 📂 app
+│   │   ├── 📄 app.component.html
+│   │   ├── 🎨 app.component.scss
+│   │   ├── 🧪 app.component.spec.ts
+│   │   ├── 📄 app.component.ts
+│   │   ├── ⚙️ app.config.ts
+│   │   ├── 🌐 app.routes.ts
+│   │   └── 📂 components
+│   │       ├── 📂 bandas
+│   │       ├── 📂 collaborate
+│   │       ├── 📂 comment
+│   │       ├── 📂 contacto
+│   │       ├── 📂 footer
+│   │       ├── 📂 foro
+│   │       ├── 📂 galeria
+│   │       ├── 📂 home
+│   │       ├── 📂 login
+│   │       ├── 📂 navbar
+│   │       ├── 📂 nosotros
+│   │       ├── 📂 ofertas
+│   │       ├── 📂 register
+│   │       └── 📂 userprofile
+│   ├── 📂 assets
+│   │   ├── 📂 images
+│   │   │   ├── 📂 artistas
+│   │   │   ├── 📂 bandas
+│   │   │   ├── 📂 banderas
+│   │   │   ├── 📂 banner
+│   │   │   ├── 📂 categorias
+│   │   │   ├── 📂 logo
+│   │   │   └── 📂 mercancia
+│   ├── 📄 index.html
+│   ├── 📄 main.ts
+│   ├── 🎨 style.css
+│   └── 🎨 styles.scss
+├── 📄 .editorconfig
+├── 📄 .gitignore
+├── ⚙️ angular.json
+├── 📄 package-lock.json
+├── 📄 package.json
+├── 📄 README.md
+├── 📄 tsconfig.app.json
+├── 📄 tsconfig.json
+└── 📄 tsconfig.spec.json
+```
 
 ## Tecnologías Utilizadas
 
@@ -60,11 +105,12 @@ Rock Latam es un sitio web dedicado a la música rock en Latinoamérica. Aquí p
 - **NPM**: Para la gestión de paquetes de Node.js.
 - **Composer**: Para la gestión de dependencias de PHP.
 
+
 ## Instalación
 
 1. Clona el repositorio:
     ```bash
-    git clone https://github.com/tu-usuario/rock-latam.git
+    git clone https://github.com/dsanchezchu/blog-musica-web.git
     ```
 
 2. Navega al directorio del proyecto:
@@ -84,6 +130,7 @@ Rock Latam es un sitio web dedicado a la música rock en Latinoamérica. Aquí p
     ```bash
     php artisan serve
     ```
+
 
 ## Uso
 
@@ -120,3 +167,4 @@ Sin embargo, no puedes:
 * Utilizar el nombre del software para promocionar tu propio producto sin permiso explícito.
 
 Recuerda que, al contribuir a este proyecto, estás de acuerdo con los términos de la licencia MIT.
+
