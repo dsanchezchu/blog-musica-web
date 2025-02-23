@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "rock-latam-maria",
+            "group": "Desarrollo",
+            "database": "rock_latam_mariadb",
+            "username": "root",
+            "password": ""
+        }
+    ]
+}

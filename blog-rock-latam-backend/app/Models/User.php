@@ -2,47 +2,53 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+// use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-
 class User extends Authenticatable
 {
-    /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, Notifiable;
+    protected $table = 'user';
+    protected $primaryKey = 'id_user';
+    public $timestamps = true;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var list<string>
-     */
+    // Columnas que se pueden llenar masivamente
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        'email', 'first_name', 'last_name', 'phone_number', 'password',
+        'profile_photo', 'role', 'is_active'
     ];
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var list<string>
-     */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
+    // Relaciones
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    protected function casts(): array
+    public function roles(){
+        return $this->belongsToMany(Role::class,'user_role','id_user','id_role');
+    }
+
+    public function adminDetails()
     {
-        return [
-            'email_verified_at' => 'datetime',
-            'password' => 'hashed',
-        ];
+        return $this->hasOne(AdminDetails::class, 'id_user');
+    }
+
+    public function memberDetails()
+    {
+        return $this->hasOne(MemberDetails::class, 'id_user');
+    }
+
+    public function editorDetails()
+    {
+        return $this->hasOne(EditorDetails::class, 'id_user');
+    }
+
+    public function authorDetails()
+    {
+        return $this->hasOne(AuthorDetails::class, 'id_user');
+    }
+    
+    public function forums()
+    {
+        return $this->hasMany(Forum::class, 'author');
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class, 'id_user');
     }
 }

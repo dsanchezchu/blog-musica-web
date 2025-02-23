@@ -13,3 +13,18 @@
 .fsn{
     font-size: .5em;
 }
+
+.campo{
+    position: relative;
+    
+    i {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    input {
+        padding-left: 30px;
+    }
+}

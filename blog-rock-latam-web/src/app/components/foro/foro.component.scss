@@ -3,19 +3,41 @@ main.wrapper {
     width: auto;
     height: auto;
     overflow: hidden;
-    background: linear-gradient(90deg, #833e74 0%, #B12D5E 35%, #C33232 100%);
+    // background: linear-gradient(135deg, #f0f0f0, #a9a9a9);
+    background-color: #AFC1C5;
 }
+
+
+
+
+
+
+    .card-container {
+        background-color: #4e4e4e5a;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        align-items: flex-start;
+        border-radius: 15px;
+        border: 2px solid rgba(255, 0, 0, 0.701);
+    }
 
 .card {
     max-width: 42em;
-    font-size: 0.8em;
+    font-size: 0.68em;
     flex-direction: row;
-    box-shadow: 0 7px 7px rgb(0, 0, 0, 0.18);
+    background-color: #f3f3f3ee;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18);
+    border-radius: 15px; /* Added to round the corners */
+    overflow: hidden; /* Ensures content respects the border radius */
+    margin: auto; /* Centers the card */
 }
 
 .card-body {
     display: flex;
     padding-left: 8px;
+    padding-right: 8px;
     justify-content: space-around;
 }
 
@@ -23,7 +45,7 @@ main.wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px 8px 16px 16px;
+    padding: 16px 8px 16px 8px;
     width: 47%;
     height: auto;
 
@@ -54,18 +76,38 @@ main.wrapper {
     align-items: center;
 }
 
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 35px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
 
 @media screen and (max-width: 475px) {
     .card {
         font-size: 0.9em;
-        background: #160bb3;
+        background: #e1c9c9;
     }
 }
 
 @media screen and (max-width: 992px) {
     .card {
         font-size: 0.5em;
-        background: #91c250;
+        background: #e1c9c9;
     }
 
     .section-end{
@@ -76,7 +118,7 @@ main.wrapper {
 @media screen and (max-width: 768px) {
     .card {
         font-size: 0.4em;
-        background: #7f6bc76e;
+        background: #e1c9c9;
     }
 
     h5 {
@@ -94,29 +136,29 @@ main.wrapper {
     }
 }
 
-@media screen and (max-width: 500px) {
-    .card {
-        font-size: 0.4em;
-        background: #df82366e;
-    }
+// @media screen and (max-width: 500px) {
+//     .card {
+//         font-size: 0.4em;
+//         background: #e1c9c9;
+//     }
 
-    h5 {
-        font-size: x-small;
-    }
+//     h5 {
+//         font-size: x-small;
+//     }
 
-    .buttom-details {
-        font-size: smaller;
-    }
+//     .buttom-details {
+//         font-size: smaller;
+//     }
 
-    .section-start {
-        width: 75%;
-    }
-}
+//     .section-start {
+//         width: 75%;
+//     }
+// }
 
 @media screen and (max-width: 483px) {
     .card {
         font-size: 0.4em;
-        background: #5053485b;
+        background: #e1c9c9;
     }
 
     h5 {
@@ -150,7 +192,7 @@ main.wrapper {
 @media screen and (max-width: 425px) {
     .card {
         font-size: 0.3em;
-        background: #b3acf2;
+        background: #e1c9c9;
     }
 
     .card-title{
@@ -192,7 +234,7 @@ main.wrapper {
 @media screen and (max-width: 375px) {
     .card {
         font-size: 0.3em;
-        background: #c4cfc675;
+        background: #e1c9c9;
     }
 
     h5 {
@@ -217,9 +259,16 @@ main.wrapper {
 @media screen and (max-width: 320px) {
     .card {
         font-size: 0.2em;
-        background: #ac92f2;
+        background: #e1c9c9;
     }
 
+    .section-start {
+        padding: 8px 2px 8px 8px !important;
+    }
+
+    .card-body {
+        padding: 8px 8px 8px 5px !important;
+    }
     h5 {
         font-size: 1.9em;
     }
