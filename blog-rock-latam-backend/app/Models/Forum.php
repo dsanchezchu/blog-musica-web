@@ -10,7 +10,7 @@ class Forum extends Model
     public $table = 'forum';
     public $primaryKey = 'id_forum';
     public $timestamps = true;
-    public $fillable = ['content','author','popular','title'];
+    public $fillable = ['content','author','publication_date','update_date','popular','title', 'image_forum'];
 
     // Relaciones
     public function author() : BelongsTo {

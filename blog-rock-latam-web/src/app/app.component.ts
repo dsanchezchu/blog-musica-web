@@ -4,6 +4,7 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { FooterComponent } from './components/footer/footer.component';
 import { NgIf } from '@angular/common';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
